@@ -1,11 +1,4 @@
-/*
-  responsive.css
-  Purpose: Improve responsiveness for Portfolio-Anwar without altering HTML or main style.css
-  Rules are additive and targeted to existing selectors. Uses modern layout techniques
-  Breakpoints: mobile (320-767px), tablet (768-1024px), desktop tweaks (1025px+)
-*/
 
-/* ---- Base safety fixes (apply to all sizes) ---- */
 /* Prevent any accidental horizontal scroll from wide elements */
 html, body {
   max-width: 100vw;
