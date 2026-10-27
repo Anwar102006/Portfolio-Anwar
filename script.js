@@ -307,21 +307,25 @@ const PROJECT_DATABASE = {
             { text: "Close", class: "btn-secondary", action: "close" }
         ]
     },
-    ecomstore: {
-        title: "EcomStore — Modular E-Commerce Web App",
-        badge: "E-Commerce Architecture",
-        subtitle: "Django Architecture Readiness • Tailwind CSS • Responsive Storefront",
-        media: '<img src="assets/EcomStore.jpg" alt="EcomStore Interface" loading="lazy">',
-        problem: "Designing clean product browsing, search filtering, and shopping cart flows that gracefully scale from frontend prototypes into full-stack backend integrations.",
-        stack: ["Django", "HTML5", "Tailwind CSS", "JavaScript"],
-        architecture: "Multi-page e-commerce template demonstrating structured product catalog cards, responsive filter sidebars, shopping cart badges, and checkout form layouts.",
+    apparelartisan: {
+        title: "Apparel Artisan — Full-Stack MERN Custom Apparel Platform",
+        badge: "EduSkills Capstone Project",
+        subtitle: "React 19 • Node.js • Express 5 • MongoDB • Redux Toolkit • Tailwind CSS • Vite",
+        media: '<img src="assets/EcomStore.jpg" alt="Apparel Artisan Interface" loading="lazy">',
+        problem: "Mass-market fashion platforms saturate the market with generic, repetitive fast-fashion items. Independent graphic artists lack dedicated storefronts to monetize custom artwork on quality garments, while style-conscious shoppers struggle to find authentic custom apparel with transparent inventory and seamless purchasing workflows.",
+        stack: ["React 19", "Redux Toolkit", "Node.js", "Express.js 5", "MongoDB", "Mongoose 9", "Tailwind CSS v3", "Vite 8", "JWT Authentication", "Axios Interceptors"],
+        architecture: "Engineered a decoupled MERN architecture with an Express 5 RESTful API (16 modular endpoints) and a high-performance React 19 single-page application. Employs a hybrid MongoDB data modeling strategy combining normalized user/product references with embedded line-item subdocuments (priceAtPurchase) to guarantee historical price immutability across orders. Global state is managed via Redux Toolkit with automated localStorage persistence, Axios request/response interceptors for Bearer token injection, and server-side inventory guarding against overselling.",
         highlights: [
-            "<strong>Scalable Data Models:</strong> Structured to map seamlessly to Django ORM product and order models.",
-            "<strong>Tailwind Utility Design:</strong> Clean utility styling ensuring rapid rendering and minimal CSS footprint."
+            "<strong>End-to-End MERN Commerce Pipeline:</strong> Built full shopping flow across 16 modular endpoints—from debounced catalog search and size selection to cart-to-order schema transition and post-checkout cart flushing.",
+            "<strong>Historical Price Immutability:</strong> Designed Mongoose 9 models embedding line items with a dedicated <code>priceAtPurchase</code> snapshot, preventing historical order totals from changing when catalog prices are later updated.",
+            "<strong>Multi-Layer Inventory Guarding:</strong> Enforces real-time stock threshold validation on both client buttons and server-side cart routes (<code>countInStock</code> checks), blocking oversold orders.",
+            "<strong>Secure RBAC & Stateless JWT:</strong> Implemented 30-day HMAC SHA-256 JWT authentication with Bcrypt hashing (10 salt rounds), protecting user profile inspection and administrative product CRUD operations.",
+            "<strong>Responsive UI & Debounced Search:</strong> Developed a mobile-first interface styled with Tailwind CSS, utilizing skeleton loaders (<code>animate-pulse</code>) and a 500ms search input debounce to eliminate redundant database read queries."
         ],
+        disclaimer: "Status: Capstone project developed under the EduSkills initiative. Complete MERN full-stack codebase ready for production deployment.",
         actions: [
-            { text: "View GitHub Repository", class: "btn-primary", url: "https://github.com/Anwar102006/EcomStore", icon: "fab fa-github" },
-            { text: "Close", class: "btn-secondary", action: "close" }
+            { text: "View GitHub Repository", class: "btn-primary", url: "https://github.com/Anwar102006/Apparel-Artisan", icon: "fab fa-github" },
+            { text: "Close Details", class: "btn-secondary", action: "close" }
         ]
     },
     powerbi: {

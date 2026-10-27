@@ -15,7 +15,7 @@ This portfolio showcases verified engineering projects, production internship ou
   - **SmartMeal**: Interactive Meal Planning App (Virtunexa Internship, served 150+ weekly users, 40% prep reduction, Vite.js & LocalStorage).
   - **BeatBox**: High-Performance Music Streaming Web App (CodeAlpha Internship, sub-75ms latency via Spotify/Pandora APIs, 20% load time optimization).
   - **FoodDash**: Responsive React.js food delivery platform prototype.
-  - **EcomStore**: Modular e-commerce storefront with Django architecture integration readiness.
+  - **Apparel Artisan**: Full-Stack MERN Custom Apparel Platform (EduSkills Capstone, React 19, Redux Toolkit, Node.js, Express 5, MongoDB, Mongoose 9, Tailwind CSS).
   - **Power BI Dashboards**: Interactive enterprise analytics, KPI tracking, and regional demand visualization.
   - **CLI Task Manager**: Python-based menu-driven task manager with persistent file handling.
   - **AR/VR Showcase**: Futuristic spatial product landing page built with React, Vite, and Tailwind CSS.
