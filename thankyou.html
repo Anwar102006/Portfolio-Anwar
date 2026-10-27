@@ -3,18 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You - Anwar's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Message Received &mdash; Shaik Anwar Basha</title>
+    <meta name="theme-color" content="#fbf9f4">
+    
+    <!-- Clean SVG Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%231c1917%22%2F%3E%3Ctext%20x%3D%2216%22%20y%3D%2221%22%20font-family%3D%22sans-serif%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20fill%3D%22%23faf9f6%22%20text-anchor%3D%22middle%22%3EA%3C%2Ftext%3E%3C%2Fsvg%3E">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="https://via.placeholder.com/32">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <style>
+        .thank-you-layout {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: var(--bg-page);
+        }
+        .thank-you-card {
+            max-width: 520px;
+            width: 100%;
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            padding: 40px 32px;
+            text-align: center;
+            box-shadow: var(--shadow-card);
+        }
+        .thank-you-glyph {
+            width: 52px;
+            height: 52px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background-color: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+        .thank-you-card h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+        .thank-you-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.65;
+            margin-bottom: 28px;
+        }
+        .thank-you-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
 </head>
 <body>
-    <div class="thank-you">
-        <div class="thank-you-content">
-            <i class="fas fa-check-circle"></i>
-            <h1>Thank You!</h1>
-            <p>Your message has been successfully sent. I'll get back to you as soon as possible.</p>
-            <a href="index.html" class="btn primary-btn">Return to Homepage</a>
+    <div class="thank-you-layout">
+        <div class="thank-you-card">
+            <div class="thank-you-glyph">
+                <i class="fas fa-check" aria-hidden="true"></i>
+            </div>
+            <h1>Message Received</h1>
+            <p>
+                Thank you for reaching out. Your message has been sent to <strong>Shaik Anwar Basha</strong>. I typically respond within 24 to 48 hours.
+            </p>
+            <div class="thank-you-actions">
+                <a href="index.html" class="btn btn-primary">
+                    <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                    <span>Return to Portfolio</span>
+                </a>
+                <a href="assets/Anwar_Resume (2).pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <i class="fas fa-file-arrow-down" aria-hidden="true"></i>
+                    <span>View Resume (PDF)</span>
+                </a>
+            </div>
         </div>
     </div>
 </body>
